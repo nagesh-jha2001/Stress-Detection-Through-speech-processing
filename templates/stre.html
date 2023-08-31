@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Stress-info</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+   <script src="{{ url_for('static', filename='script.js') }} "defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+          <h1>Stress Remedies</h1>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+<div class="container">
+
+   <h3 class="title"> stress-remedies </h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+        <img src="{{ url_for('static', filename='exe1.avif') }}" alt="My Image" >
+        <h3>Exercise</h3>
+      </div>
+
+      <div class="product" data-name="p-2">
+        <img src="{{ url_for('static', filename='med.avif') }}" alt="My Image" >
+         <h3>Meditation</h3>
+      </div>
+
+      <div class="product" data-name="p-3">
+        <img src="{{ url_for('static', filename='eat.avif') }}" alt="My Image" >
+         <h3>Healthy eating</h3>
+      </div>
+
+      <div class="product" data-name="p-4">
+        <img src="{{ url_for('static', filename='sleep.avif') }}" alt="My Image" >
+         <h3>Sleep</h3>
+      </div>
+
+      <div class="product" data-name="p-5">
+        <img src="{{ url_for('static', filename='sup2.avif') }}" alt="My Image" >
+         <h3>Social support</h3>
+      </div>
+
+      <div class="product" data-name="p-6">
+        <img src="{{ url_for('static', filename='pro.avif') }}" alt="My Image" >
+         <h3>Professional help</h3>
+      </div>
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='exe1.avif') }}" alt="My Image" >
+      <h3>Exercise</h3>
+      <p>
+        Exercise is a powerful stress-reducing tool. It releases endorphins, promoting relaxation and well-being. It alleviates physical tension and improves blood circulation. Exercise improves sleep quality and acts as a healthy distraction. It boosts mood and self-confidence, fostering a positive mindset. Incorporating exercise into daily routines enhances overall well-being and reduces stress.</p>
+      <div class="buttons">
+         <a href="https://www.youtube.com/watch?v=6ijg6tpyxXg&pp=ygUbZXhlcmNpc2UgZm9yIHN0cmVzcyByZWxpZWYg" class="buy">Watch tutorial</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='med.avif') }}" alt="My Image" >
+      <h3>Meditation</h3>
+      <p>
+        Meditation is a powerful practice for stress relief. By focusing on the present moment, it helps calm the mind and release tension. Regular meditation reduces stress hormones and promotes a sense of calm and tranquility. It improves self-awareness and cultivates a more balanced perspective on stressors. Just a few minutes of daily meditation can provide profound relaxation and restore inner peace.</p>
+      <div class="buttons">
+         <a href="https://youtu.be/R_yFAMtfv9c" class="buy">Watch tutorial</a>
+
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='eat.avif') }}" alt="My Image" >
+      <h3>Healthy Eating</h3>
+      <p>Maintaining a balanced diet is essential for stress management. Nourishing your body with nutritious foods supports overall well-being and resilience. Incorporate plenty of fruits, vegetables, whole grains, and lean proteins into your meals. Avoid excessive consumption of caffeine, alcohol, and sugary foods, as they can exacerbate stress levels. Prioritize mindful eating and listen to your body's hunger and fullness cues.</p>
+      <div class="buttons">
+        <a href="https://youtu.be/R2GAngyBJ4U" class="buy">Watch tutorial</a>
+   
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='sleep.avif') }}" alt="My Image" >
+      <h3>Sleep</h3>
+      <p>Adequate sleep is vital for stress reduction. Aim for 7-9 hours of quality sleep each night. Establish a consistent sleep schedule and create a conducive sleep environment. Practice relaxation techniques before bed to unwind and prepare your mind for rest. Limit exposure to electronic devices and create a calming bedtime routine to promote a restful night's sleep.</p>
+      <div class="buttons">
+        <a href="https://youtu.be/FXNRj03ojtU" class="buy">Watch why</a>
+    </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='sup2.avif') }}" alt="My Image" >
+      <h3>Social Support</h3>
+      <p>Cultivating social connections is crucial for managing stress. Seek support from family, friends, or support groups. Engage in meaningful conversations, share your concerns, and lean on your support network during challenging times. Spending quality time with loved ones and engaging in activities together fosters a sense of belonging and provides emotional support.</p>
+      <div class="buttons">
+        <a href="https://youtu.be/O16Cz0dXF_Q" class="buy">Watch why</a>
+    </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="{{ url_for('static', filename='pro.avif') }}" alt="My Image" >
+      <h3>Professional help</h3>
+      <p>When stress becomes overwhelming or persistent, seeking professional help is important. Reach out to a mental health professional who can provide guidance and support tailored to your specific needs. They can offer effective coping strategies, therapy, or medication if necessary. Seeking professional help is a proactive step towards better managing stress and promoting overall well-being.</p>
+      <div class="buttons">
+        <a href="https://youtu.be/SvoV3da5pUo" class="buy">Watch why</a>
+    </div>
+   </div>
+
+</div>
+
+</body>
+</html>

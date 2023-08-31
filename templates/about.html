@@ -1,0 +1,202 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Our-Team</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+.container {
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 50%; /* Added border-radius to make it oval */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.header {
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.teams:hover {
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.teams img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Added border-radius to make it oval */
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.social-links {
+    margin: 14px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+}
+
+.social-links a i {
+    color: #444;
+}
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Stress Detection</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="stre.html">Remedies</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="header">
+            <h1>Our Team</h1>
+        </div>
+        <div class="sub-container">
+            <div class="teams">
+              <img src="{{ url_for('static', filename='nagesh.png') }}" alt="My Image">
+                <div class="name">Nagesh Kumar Jha</div>
+                <div class="about"><b><i></i>Meet Nagesh Jha, a machine learning developer specializing in model creation and testing.
+                   With expertise in algorithms and data analysis, Nagesh develops accurate and innovative machine learning models.
+                    Collaborate with Nagesh to optimize your data-driven initiatives and unlock valuable insights.</i></b></div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/nagesh.jha.315?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/_nagesh_jha?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/NageshJ52354400?t=xqxniIBHcAYPwlVG6UtKGw&s=08"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="teams">
+              <img src="{{ url_for('static', filename='bikash.jpg') }}" alt="My Image">
+                <div class="name">Bikash Ranjan Das </div>
+                <div class="about"><b><i>Meet Bikash Ranjan Das, a frontend developer specializing in Flask app development. With a focus on 
+                  creating dynamic and user-friendly web applications, Bikash brings expertise in HTML, CSS, and Flask. Collaborate with
+                   Bikash for frontend solutions that elevate your online presence.</i></b> </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/bikash.ranjandas.184?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/bikashcyberwarrior42?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/BikashR57904951?t=aMFI1uom6MtJ53ngH06EFw&s=08"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="teams">
+              <img src="{{ url_for('static', filename='gyandeep.jpg') }}" alt="My Image">
+                <div class="name">Gyandeep Gohain </div>
+                <div class="about"><b><i>Meet Gyandeep Gohain, a frontend developer specializing in HTML and CSS. With a keen eye for design
+                   and a passion for crafting captivating user experiences, Gyandeep creates visually stunning and responsive websites. 
+                   Their expertise in frontend development ensures modern, innovative solutions for your projects.</i></b>  </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Gyandeep69"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/__.gyan_?igshid=ZDc4ODBmNjlmNQ=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/GyandeepGohain"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="teams">
+              <img src="{{ url_for('static', filename='hod.jpg') }}" alt="My Image">
+              <div class="name">Dr Uzzal Sharma </div>
+                <div class="about"><b><i>Uzzal is an experienced software developer and mentor who has
+                   been guiding us through this journey. He has worked on numerous projects over the years and has a wealth of 
+                   knowledge and expertise to share. We are grateful for his guidance and support.</i></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
